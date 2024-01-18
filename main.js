@@ -5,23 +5,17 @@ import Canvas from './Canvas';
 
 const canvas = new Canvas('c');
 const btnFlip = document.getElementById('ButtonFlip');
-// const text = '熊玩\nヌ日池」極健リ\nabc\nhello))健 1234 名８食ー教策12ぜ'
-const text = '(abc)こbra\ncket]日「ム」\n極ー右';
+const text = '熊玩\nヌ日池」極健リ\nabc\nhello))健 1234 名８食ー教策12ぜ'
+// const text = '(abc)こbra\ncket]日「ム」\n極ー右';
 
 let style = {
   "fill": "#292929",
   "editable": true,
   "fontSize": 40,
-  width: 300,
-  "fontWeight": "normal",
-  "underline": false,
-  "backgroundColor": "transparent",
-  "fontFamily": "gothic",
   "left": 100,
   "top": 50,
-  lineHeight: 5,
-  linethrough: false,
-  overline: false,
+  "width": 400,
+  "height": 400,
 };
 
 // let funcName = 'calcTextWidth';
@@ -60,7 +54,7 @@ btnFlip.onclick = () => {
 }
 
 canvas.add(cjkText)
-// canvas.add(textbox)
+canvas.add(textbox)
 
 function updateStyles() {
   if (cjkText.isEditing) {
